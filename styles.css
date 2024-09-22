@@ -1,0 +1,100 @@
+/* Estilo padrão para o corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Estilo do menu de navegação */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.menu-list {
+    display: none; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-list li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.menu-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+/* Estilo para o botão de menu hamburguer */
+.menu-hamburger {
+    display: none; 
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.menu-hamburger:hover {
+    background-color: #575757;
+}
+
+/* Estilo para seções */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Regras de estilo para telas grandes */
+@media screen and (min-width: 768px) {
+    .menu-list {
+        display: block; 
+        text-align: center;
+    }
+
+    .menu-list li {
+        display: inline;
+    }
+
+    .menu-hamburger {
+        display: none; 
+    }
+}
+
+/* Regras de estilo para telas pequenas */
+@media screen and (max-width: 767px) {
+    .menu-list {
+        display: none; 
+    }
+
+    .menu-hamburger {
+        display: block; 
+    }
+
+    .menu-list.active {
+        display: block; 
+        text-align: center;
+    }
+
+    .menu-list li {
+        display: block;
+        margin: 10px 0;
+    }
+}

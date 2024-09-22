@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde e Cuidados Pessoais</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Saúde e Cuidados Pessoais</h1>
+        <p>Descubra a importância de cuidar do seu corpo e da sua mente para uma vida saudável e equilibrada.</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <div class="menu-hamburger" onclick="toggleMenu()">☰ Menu</div>
+        <ul id="menu" class="menu-list">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#alimentacao">Alimentação</a></li>
+            <li><a href="#exercicios">Exercícios</a></li>
+            <li><a href="#saudemental">Saúde Mental</a></li>
+            <li><a href="#calculadora-imc">Calculadora de IMC</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Início -->
+    <section id="inicio">
+        <h2>Hábitos Saudáveis</h2>
+        <p>Manter hábitos saudáveis é essencial para garantir uma vida longa e equilibrada. Alimentar-se de forma adequada, praticar exercícios físicos regularmente e cuidar da saúde mental são pilares fundamentais para o bem-estar. Adotar um estilo de vida saudável promove não apenas benefícios físicos, mas também contribui para uma mente mais tranquila e produtiva.</p>
+    </section>
+
+    <!-- Seção Alimentação -->
+    <section id="alimentacao">
+        <h2>Alimentação Saudável</h2>
+        <p>Mantenha uma alimentação variada, incluindo frutas, vegetais, proteínas magras e grãos integrais. Evite alimentos ultraprocessados e beba bastante água.</p>
+        <h3>Exemplos de Refeições:</h3>
+        <ul>
+            <li><strong>Café da Manhã:</strong> Iogurte natural com frutas e aveia.</li>
+            <li><strong>Almoço:</strong> Frango grelhado com arroz integral e salada.</li>
+            <li><strong>Lanche:</strong> Torrada integral com abacate.</li>
+            <li><strong>Jantar:</strong> Sopa de legumes com frango ou tofu.</li>
+        </ul>
+    </section>    
+
+    <!-- Seção Exercícios -->
+    <section id="exercicios">
+        <h2>Exercícios Físicos</h2>
+        <p>Inclua diferentes tipos de atividades físicas na sua rotina para melhorar a saúde geral.</p>
+        <h3>Exemplos de Atividades:</h3>
+        <ul>
+            <li><strong>Caminhada:</strong> 30 minutos diários para melhorar o condicionamento físico.</li>
+            <li><strong>Treinamento Funcional:</strong> Agachamentos, flexões e abdominais.</li>
+            <li><strong>Yoga:</strong> Para aumentar a flexibilidade e reduzir o estresse.</li>
+        </ul>
+    </section>    
+
+    <!-- Seção Saúde Mental -->
+    <section id="saudemental">
+        <h2>Saúde Mental</h2>
+        <p>Gerencie o estresse e cuide do seu bem-estar emocional com estratégias simples.</p>
+        <h3>Dicas:</h3>
+        <ul>
+            <li><strong>Meditação:</strong> Pratique por 10 minutos diariamente para reduzir a ansiedade.</li>
+            <li><strong>Diário de Gratidão:</strong> Anote 3 coisas boas que aconteceram no seu dia.</li>
+            <li><strong>Auto-cuidado:</strong> Dedique tempo a atividades que lhe tragam prazer e relaxamento.</li>
+        </ul>
+    </section>    
+
+    <!-- Seção Calculadora de IMC -->
+    <section id="calculadora-imc">
+        <h2>Calculadora de IMC</h2>
+        <p>O Índice de Massa Corporal (IMC) é uma medida utilizada para verificar se você está dentro de um peso saudável em relação à sua altura. Calcular o seu IMC pode ser um ponto de partida para entender melhor sua condição física e adotar mudanças no estilo de vida, caso necessário. Lembre-se, no entanto, que o IMC é apenas um indicador e não leva em conta fatores como composição corporal e massa muscular.</p>
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" required>
+        
+        <label for="altura">Altura (m):</label>
+        <input type="number" step="0.01" id="altura" required>
+        
+        <button onclick="calcularIMC()">Calcular IMC</button>
+        
+        <p id="resultado"></p>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
